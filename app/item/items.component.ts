@@ -23,7 +23,7 @@ export class ItemsComponent implements OnInit {
         this.itemService.getdataTransport()
             .subscribe((res) => {
                 this.datatrn = res;
-                console.log(this.datatrn)
+               // console.log(this.datatrn)
             }, 
             (err)=>console.log("Something went wrong "+err)
         );

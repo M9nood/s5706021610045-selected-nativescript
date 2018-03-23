@@ -45,7 +45,7 @@ export class ItemService {
 
     getdataTransport(){
         let options = this.createRequestOptions();
-        let api = "https://us-central1-selected-midterm-1647e.cloudfunctions.net/transport2558"  
+        let api = "https://us-central1-traff2-2842e.cloudfunctions.net/traf"  
           return this.http.get(api)
               .map(res =>  res.json());
     }

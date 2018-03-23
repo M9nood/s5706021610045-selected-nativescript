@@ -10,7 +10,7 @@ So you can still use template expressions, bindings, templates as well as all th
 The ActionBar is the NativeScript common abstraction over the Android ActionBar and iOS NavigationBar.
 http://docs.nativescript.org/ui/action-bar
 -->
-<ActionBar title="ข้อมูลปริมาณการจราจร ปี 2558" class="action-bar">
+<ActionBar title="ข้อมูลปริมาณการจราจร ปี 2558" class="action-bar" style="color: green;" >
 </ActionBar>
 
 <!--
@@ -24,12 +24,12 @@ core theme, such as p-20, btn, h2, and list-group. You can view a full list of t
 class names available for styling your app at https://docs.nativescript.org/ui/theme.
 -->
 
-<StackLayout class="page">
-    <StackLayout class="input-field">
-        <TextField #secondTx hint="หมายเลขทางหลวง" autocorrect="false" returnKeyType="done" (returnPress)="submit(secondTx.text)" class="input input-border"></TextField>
+<StackLayout class="">
+    <StackLayout class="">
+        <TextField style="background-color: grey;color:green"  #secondTx hint="หมายเลขทางหลวง" autocorrect="false" returnKeyType="done" (returnPress)="submit(secondTx.text)" class=""></TextField>
     </StackLayout>
             
-    <Button text="ค้นหาหมายเลขทางหลวง" (tap)="showAlert(secondTx.text)" class="btn btn-primary btn-active"></Button>
+    <Button text="ค้นหา" (tap)="showAlert(secondTx.text)" style="background-color: green;"  class=""></Button>
     <ListView [items]="datatrn" class="list-group">
         <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
         <StackLayout StackLayout [class.odd]="odd " [class.even]="even" >

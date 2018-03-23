@@ -29,7 +29,7 @@ class names available for styling your app at https://docs.nativescript.org/ui/t
         <TextField style="background-color: grey;color:green"  #secondTx hint="หมายเลขทางหลวง" autocorrect="false" returnKeyType="done" (returnPress)="submit(secondTx.text)" class=""></TextField>
     </StackLayout>
             
-    <Button text="ค้นหา" (tap)="showAlert(secondTx.text)" style="background-color: green;"  class=""></Button>
+    <Button text="ค้นหา" (tap)="showAlert(secondTx.text)"   class=""></Button>
     <ListView [items]="datatrn" class="list-group">
         <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
         <StackLayout StackLayout [class.odd]="odd " [class.even]="even" >
